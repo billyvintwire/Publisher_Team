@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 가이드</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- 로컬소스 -->
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/pub.css" />
+    <link rel="stylesheet" href="../../assets/css/button.css" />
+</head>
+<body>
+<style>
+    .web_publish{
+        width:100vw;
+        height:100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .calculator{
+        min-height:50vh;
+        max-height:367px;
+        min-width:80vw;
+        max-width:500px;
+    }
+    .calculator .inner{
+        padding:20px;
+    }
+</style>
+<div class="web_publish">
+    <section class="calculator">  
+        <article>
+            <div class="inner">
+                <div class="input-wrap">
+                    <label for="" style="display:block;font-size:14px;margin-bottom:10px;">px</label>
+                    <input id="contentPx" type="text" value="" data-value="" placeholder="contents px">
+                    <input id="containerPx" type="text" value="768" data-value="" placeholder="window width">
+                </div>
+                <div class="input-wrap">
+                    <label for="" style="display:block;font-size:14px;margin-bottom:10px;">vw</label>
+                    <input id="contentVw" type="text" value="" data-value="" placeholder="vw value">
+                </div>
+                <div style="margin-top:30px;height:30px;border-top:1px solid #ddd"></div>
+                <div class="form-wrap" id="contentsPx">
+                    <div class="input-group">
+                        <div class="input-wrap">
+                            <label for="" style="display:block;font-size:14px;margin-bottom:10px;">12px</label>
+                            <input type="text" value="" data-value="12" readonly>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="" style="display:block;font-size:14px;margin-bottom:10px;">14px</label>
+                            <input type="text" value="" data-value="14">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-wrap">
+                            <label for="" style="display:block;font-size:14px;margin-bottom:10px;">16px</label>
+                            <input type="text" value="" data-value="16">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="" style="display:block;font-size:14px;margin-bottom:10px;">18px</label>
+                            <input type="text" value="" data-value="18">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-wrap">
+                            <label for="" style="display:block;font-size:14px;margin-bottom:10px;">20px</label>
+                            <input type="text" value="" data-value="20">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="" style="display:block;font-size:14px;margin-bottom:10px;">32px</label>
+                            <input type="text" value="" data-value="32">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-wrap">
+                            <label for="" style="display:block;font-size:14px;margin-bottom:10px;">64px</label>
+                            <input type="text" value="" data-value="64">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="" style="display:block;font-size:14px;margin-bottom:10px;">80px</label>
+                            <input type="text" value="" data-value="80">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <script>
+        window.onload = function(){
+            
+        
+            function calculator(){
+                var contentPx = $('#contentPx');
+                var containerPx = $('#containerPx');
+                var contentVw = $('#contentVw');
+                var contents = $('#contentsPx');
+                var vwpx = (contentPx.val() / containerPx.val()) * 100;
+                vwpx = vwpx.toFixed(5)
+                contentVw.val(vwpx)
+
+                
+                for (let index = 0; index < contents.find('input').length; index++) {
+                    let vwpxs = (contents.find('input').eq(index).attr('data-value') / containerPx.val()) * 100
+                    vwpxs = vwpxs.toFixed(5)
+                    contents.find('input').eq(index).val(vwpxs)
+                }
+            }
+            var contentPx = $('#contentPx');
+            var containerPx = $('#containerPx');
+            $('#contentPx').on('keyup',function(){
+                calculator()
+            })
+        }
+    </script>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 html{
-        font-size:10px;
+	font-size:10px;
 }
 .web_publish{
 	position:relative;
@@ -24,7 +24,13 @@ html{
 	width:100%;
 }
 
-
+.layout{
+	font-size:0;
+	position:absolute;
+	left:0;top:0;
+	width:0;height:0;
+	overflow:hidden;
+}
 
 .form-wrap{
 	display:block;
@@ -49,21 +55,21 @@ html{
 section{
 	width:100%;
 	margin-bottom:20px;
+	min-height:200px;
 }   
 article{
-	max-width:108rem;
 	margin:0 auto;
 	position:relative;
 	border:1px solid #ddd;
 	border-radius: 1.6rem;
 }
 .container{
-	max-width:108rem;
+	max-width:1080px;
 	margin:0 auto;
 	position:relative;
 }
 .inner{
-	padding:3rem;
+	padding:30px;
 }
 .inner.inner-nopad{
 	padding:0;
@@ -93,3 +99,23 @@ article{
 .item-row-2 .item{width:50%;}
 .item-row-3 .item{width:33.3333%}
 .item-row-4 .item{width:25%}
+@media (min-width: 320px) and (max-width: 768px){
+	.only_w{
+
+	}
+	section.only_w{
+		height:0;
+		min-height:0;
+		overflow:hidden;
+		-webkit-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+	}
+	.container{
+		width:100%;
+		overflow:hidden;
+	}
+	.inner{
+		padding:0.5vw;
+	}
+
+}

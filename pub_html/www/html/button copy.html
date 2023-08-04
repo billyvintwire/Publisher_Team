@@ -14,37 +14,99 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- 로컬소스 -->
     <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/common.css" />
     <link rel="stylesheet" href="../assets/css/pub.css" />
     <link rel="stylesheet" href="../assets/css/button.css" />
 </head>
 <body>
-<header>
-    <div class="container">
-        <nav>
-            <ul>
-                <li>
-                    <span>
-                        
-                    </span>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+
 <div class="web_publish">
-    <section> 
+
+    <h2 class="layout-title">아이템</h2>
+    <section>
         <article>
             <div class="container">
                 <div class="inner">
-
+                    <div class="item-wrap item-row-wrap">
+                        <div class="item">
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>체크박스</span>
+                                </div>
+                                <div class="input-wrap checkbox">
+                                    <input id="checkbox01_01" type="checkbox" name="check01">
+                                    <label for="checkbox01_01">전체</label>
+                                </div>
+                                <div class="input-wrap checkbox disabled">
+                                    <input id="checkbox01_02" type="checkbox" name="check02">
+                                    <label for="checkbox01_02">TEXTTEXTTEXT</label>
+                                </div>
+                                <div class="input-wrap checkbox ">
+                                    <input id="checkbox01_03" type="checkbox" name="check03">
+                                    <label for="checkbox01_03" class="emphasis">TEXTTEXTTEXTTEXTTEXT</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>체크박스</span>
+                                </div>
+                                <div class="input-wrap checkbox">
+                                    <input id="checkbox01_01" type="checkbox" name="check01">
+                                    <label for="checkbox01_01">전체</label>
+                                </div>
+                                <div class="input-wrap checkbox disabled">
+                                    <input id="checkbox01_02" type="checkbox" name="check02">
+                                    <label for="checkbox01_02">TEXTTEXTTEXT</label>
+                                </div>
+                                <div class="input-wrap checkbox ">
+                                    <input id="checkbox01_03" type="checkbox" name="check03">
+                                    <label for="checkbox01_03" class="emphasis">TEXTTEXTTEXTTEXTTEXT</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>텍스트 체크박스</span>
+                                </div>
+                                <div class="input-wrap checkbox txt-check">
+                                    <input id="checkbox01_01" type="checkbox" name="check01">
+                                    <label for="checkbox01_01">전체</label>
+                                </div>
+                                <div class="input-wrap checkbox txt-check disabled">
+                                    <input id="checkbox01_02" type="checkbox" name="check02">
+                                    <label for="checkbox01_02">TEXTTEXTTEXT</label>
+                                </div>
+                                <div class="input-wrap checkbox txt-check">
+                                    <input id="checkbox01_03" type="checkbox" name="check03">
+                                    <label for="checkbox01_03" class="emphasis">TEXTTEXTTEXTTEXTTEXT</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>텍스트 체크박스</span>
+                                </div>
+                                <div class="input-wrap select">
+                                    <label for="search_select" class="hide">검색어</label>
+                                    <select name="search_select" id="search_select">
+                                        <option value="전체">전체</option>
+                                        <option value="전체01">전체01</option>
+                                        <option value="전체02">전체02</option>
+                                    </select>
+                                </div>
+                                <div class="input-wrap w-400">
+                                    <label for="search_input" class="hide">검색어</label>
+                                    <input type="text" id="search_input">
+                                </div>
+                                <div class="input-wrap ">
+                                    <input type="text" id="" placeholder="TEXT">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
     </section>
     <!--type01-->
-    <h2 class="layout">기본</h2>
-    <section class="only_w"> 
+    <section> 
         <article>
             <div class="container">
                 <div class="inner">
@@ -87,8 +149,7 @@
         </article>
     </section>
     <!--type02-->
-    <h2 class="layout">호버,클릭 액션</h2>
-    <section class="only_w"> 
+    <section> 
         <article>
             <div class="container">
                 <div class="inner">
@@ -116,44 +177,14 @@
                                     <button type="button" class="type01 size02">TEXT</button>
                                     <button type="button" class="type01" disabled>TEXT</button>
                                 </div>
+                                <div class="right">
+                                    <button type="button" class="type02">TEXT</button>
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="type03">TEXT</button>
+                                    <button type="button" class="type03" disabled>TEXT</button>
+                                </div>
                             </div>
                         
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
-    <h2 class="layout">반응형 버튼</h2>
-    <section class=""> 
-        <article>
-            <div class="container">
-                <div class="inner">
-                    <div class="item-wrap">
-                        <div class="item">
-                            <div class="btn-wrap btn-wrap-type03 responsive-btn-wrap">
-                                <div class="left">
-                                    <button class=" "> BUTTON 1 </button>
-                                    <button class=" type01"> BUTTON 2 </button>
-                                    <button class=" type02"> BUTTON 3 </button>
-                                    <button class=" type03"> BUTTON 4 </button>
-                                </div>
-                                <div class="right">
-                                    <button type="button" class="type02" disabled>TEXT</button>
-                                    <button type="button" class="type02" disabled>TEXT</button>
-                                    <button type="button" class="icon-button" disabled>TEXT</button>
-                                    <button type="button" class="icon-button" disabled>TEXT</button>
-                                </div>
-                            </div>
-                            <div style="height:20px"></div>
-                            <div class="btn-wrap btn-wrap-type03 responsive-btn-wrap">
-                                <div class="left">
-                                    <button class="size-m-01"> BUTTON 1 </button>
-                                    <button class=" type01 size-m-02"> BUTTON 2 </button>
-                                    <button class=" type02 size-m-03" > BUTTON 3 </button>
-                                    <button class=" type03 size-m-04"> BUTTON 4 </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
