@@ -1,0 +1,278 @@
+/* reset */
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Arial";color:#000;line-height:1.5;}
+input,select,option{font-family:"Arial"}
+a{text-decoration: none;}
+img{border:0;max-width:100%;}
+ul , li{list-style: none;}
+
+
+.wrap{width:100%;height:100%;position:relative;}
+
+/* contents */
+.text_wrap{
+    position:relative;
+    margin:0 auto;
+    border:1px solid #ddd;
+    box-shadow:3px 3px 10px #ddd;
+    margin-top:100px;
+    width:623px;
+    padding:0px 0 35px 0 ;
+    overflow:hidden;
+}
+.container{
+    padding:0 55px 0 54px;
+    position:relative;
+}
+/* header */
+.header{
+    position:relative;
+    width:100%;
+    height:90px;
+}
+.menu_btnarea{
+    position:absolute;
+    left:55px;top:32px;
+    z-index:2000;
+}
+.menu_btnarea > button{
+    border:none;
+    background-color:transparent;
+    width:42px;height:29px;
+    cursor:pointer;
+    transition:all 0.25s ease-in-out;
+    -webkit-transition:all 0.25s ease-in-out;
+}
+.menu_btnarea > button > img{
+   
+}
+.header .logo_area{
+    width:100%;
+    height:90px;
+    padding-top:28px;
+    text-align:center;
+}
+.nav_wrap{
+    display:none;
+    position:absolute;
+    top:-0%;left:0;
+    height:100%;width:50%;
+    background-color:rgba(59,56,56,0.95);
+    transition:width 0.25s ease-in-out;
+    -webkit-transition:width 0.25s ease-in-out;
+    z-index: 1000;
+}
+.nav_wrap .close_btnarea{
+    position:absolute;
+    right:15px;
+    bottom:15px;
+    color:#fff;
+    border:none;
+    background-color:transparent;
+    font-size:0;
+}
+.nav_wrap .close_btnarea button{
+    background-color:transparent;
+    border:none;
+    
+}
+.nav_wrap .nav{
+    width:310px;
+    padding-top:129px;
+    height:100%;
+}
+.nav_wrap .nav > li{
+    width:100%;
+    height:44px;
+    margin-bottom:66px;
+    text-align:center;
+    position:relative;
+}
+.nav_wrap .nav > li > span{
+    display:block;
+   
+    width:100%;
+    cursor:pointer;
+    color:#fff;
+    font-size:36px;
+    transition:all 0.25s ease-in-out;
+    -webkit-transition:all 0.25s ease-in-out;
+}
+.nav_wrap .nav > li:hover > span{
+    color:#fff !important;
+}
+.nav_wrap .nav > li.on > span{
+    display:block;
+    width:100%;
+    cursor:pointer;
+    font-size:36px;
+    color:#fff !important;
+}
+.nav_lab2{
+    display:none;
+    position:absolute;
+    width:50%;
+    height:100%;
+    left:0;
+    top:0;
+    background-color:transparent;
+    padding-top:129px;
+    
+}
+.nav_lab2 ul > li{
+    width:100%;
+    height:44px;
+    margin-bottom:66px;
+    text-align:center;
+    position:relative;
+}
+.nav_lab2 ul > li > span{
+    display:block;
+    width:100%;
+    cursor:pointer;
+    color:#fff;font-size:36px;
+}
+/* button_text */
+.button_test{width:100%;}
+
+.button_test .press_button{
+    width:100%;height:58px;
+    border:1px solid #2f528f;
+    background-color:#000;
+    margin-bottom:30px;
+}
+.button_test .press_button button{
+    background-color:#000;
+    border:0;
+    width:100%;
+    height:56px;line-height:56px;
+    text-align:center;
+    color:#fff;
+    font-size:23px;
+    cursor:pointer;
+    transition:all 0.25s ease-in-out;
+    -webkit-transition:all 0.25s ease-in-out;
+}
+.button_test .press_button:hover > button{
+    background-color:#fff;
+    color:#000;
+}
+.button_test .press_btns{
+     width:100%;height:58px;
+    text-align:center;
+    border:1px solid #2f528f;
+    background-color:#000;
+    margin-bottom:30px;
+}
+
+/* visual_wrap */
+.visual_wrap{
+    width:100%;
+    height:289px;
+    overflow:hidden;
+    position:relative;
+    margin-bottom:28px;
+}
+.text_slider_wrap{
+    position:relative;
+    width:100%;
+    height:36px;
+    overflow:hidden;
+}
+.text_slider a{
+    position:absolute;
+    display:inline-block;
+    width:20px;
+    height:36px;
+}
+.text_slider a.prev_btn{
+    left:0;top:0;
+}
+.text_slider a.next_btn{
+    right:0;top:0;
+}
+.text_slider{width:467px;margin:0 auto;}
+.text_slider ul{
+    
+}
+.text_slider ul li{
+    float:left;
+    width:33.333333%;
+    text-align:center;
+}
+.text_slider ul li span{
+    color:#000;font-size:23px;
+    font-weight:600;
+    letter-spacing: 1.5px;
+}
+
+
+.bx-wrapper .bx-wrapper{
+    border:0;
+    margin:0;
+    box-shadow:0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+ <head>
+<title>퍼블리셔 테스트 폼</title>
+<meta charset="utf-8">   
+<link rel="canonical" href="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="naver-site-verification" content=""/>
+<meta name="keywords" content="퍼블리셔 테스트 폼">
+<meta name="description" content="퍼블리셔 테스트 폼">
+<meta name="subject" content="퍼블리셔 테스트 폼">
+    
+<meta property="og:type" content="website">
+<meta property="og:title" content="퍼블리셔 테스트 폼"/>
+<meta property="og:description" content="퍼블리셔 테스트 폼"/>
+<meta property="og:image" content=""/>
+    
+<meta property="og:url" content="">
+
+
+<!-- 대표 url-->
+<link rel="canonical" href="">
+	
+	
+<!-- js -->
+    <script src="./resources/js/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="./resources/js/pub_test.js" type="text/javascript"></script>
+
+<!--  plugin -->
+     <script src="./resources/plugin/jquery_bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
+	
+	<!-- style -->
+
+	<link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+     <link href="./resources/css/jquery.bxslider.css" type="text/css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if lte IE 7]>
+	<script src="js/IE8.js"></script>
+	<![endif]-->
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css" />
+	<![endif]-->
+ </head>
+<body>
+
+
+<div class="wrap">
+    <!-- contents -->
+    <div class="text_wrap">
+        <!-- header -->
+        <div class="header">
+            <!-- drop_down_button -->
+            <!-- 
+                메뉴   
+                플러그인 사용시 하
+                직접만들시 하
+            -->
+            <div class="menu_btnarea">
+                <button>
+                    <img src="./resources/img/menu.png" alt="menu_on" />
+                </button>
+            </div>
+            <!-- //drop_down_button -->
+            
+            <!-- logo_area -->
+            <div class="logo_area">
+                <a href="#">
+                    <img src="./resources/img/logo.png" alt="1stop_logo" />
+                </a>
+            </div>
+            <!-- //logo_area -->
+            <!-- drop_down_menu -->
+            <div class="nav_wrap">
+                <ul class="nav">
+                    <li>
+                        <span>menu 1</span>
+                        
+                    </li>
+                    <li>
+                        <span>menu 2</span>
+                    </li>
+                    <li>
+                        <span>menu 3</span>
+                    </li>
+                </ul>
+                <div class="nav_lab2">
+                    <ul>
+                        <li>
+                            <span> menu 1 - 1 </span>
+                        </li>
+                        <li>
+                            <span> menu 1 - 2 </span>
+                        </li>
+                        <li>
+                            <span> menu 1 - 3 </span>
+                        </li>
+                    </ul>
+                    <ul class="">
+                        <li>
+                            <span> menu 2 - 1 </span>
+                        </li>
+                        <li>
+                            <span> menu 2 - 2 </span>
+                        </li>
+                        <li>
+                            <span> menu 2 - 3 </span>
+                        </li>
+                    </ul>
+                    <ul class="">
+                        <li>
+                            <span> menu 3 - 1 </span>
+                        </li>
+                        <li>
+                            <span> menu 3 - 2 </span>
+                        </li>
+                        <li>
+                            <span> menu 3 - 3 </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="close_btnarea">
+                    <button>
+                        <img src="./resources/img/menu_close.png" alt="menu_close"/>
+                    </button>
+                </div>
+            </div>
+            <!-- //drop_down_menu -->
+            
+        </div>
+        <!-- //header -->
+        
+        <!-- container -->
+        <div class="container">
+            <!--button_test -->
+            <div class="button_test">
+                <div id="press_wrap">
+                    
+                </div>
+                
+                <div class="press_button">
+                    <button>
+                        Press this Button
+                    </button>
+                </div>
+
+            </div>
+            <!--//button_test  -->
+
+            <!-- img_slider -->
+            <!--
+                매인 슬라이드
+                플러그인 그대로 이용시 하 ,
+                플러그인 커스텀 중 ,
+                직접 만들시 중~상 
+            -->
+            <div class="visual_wrap">
+                <div class="slider">
+                    <ul>
+                        <li>
+                            <img src="./resources/img/spot_1.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./resources/img/spot_2.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./resources/img/spot_3.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //img_slider -->
+            <script>
+            
+            
+		$(window).ready(function(){
+			var main_prd_idx;
+			$('.main_tab_area ul li').click(function(){
+				var thisidx = $(this).index();
+				$('.main_tab_area ul li').removeClass('on');
+				$(this).addClass('on');
+			});
+			function main_prd_slide(idx){
+				 $('.slider ul').bxSlider({
+					 auto:true,
+					  adaptiveHeight: true,
+					  speed:1000,
+					mode: 'fade',
+					  autoHover:true,
+					 onSlideBefore: function($slideElement, oldIndex, newIndex){
+							$('.main_prd_area_'+idx+' .main_prd_slide > li').removeClass('main_prd_slide_active');
+							$('.main_prd_area_'+idx+' .main_prd_slide > li').removeClass('main_prd_slide_active2');
+							$('.main_prd_area_'+idx+' .main_prd_slide > li').removeClass('asd');
+							$('.main_prd_area_'+idx+' .main_prd_slide > li').removeClass('main_prd_slide_active3');
+							$('.main_prd_area_'+idx+' .main_prd_slide > li').eq(newIndex+1).addClass('main_prd_slide_active');
+							// $('.main_prd_area_'+idx+' .main_prd_slide > li').eq(newIndex+1).addClass('asd')
+							//$('.main_prd_slide > li').eq(newIndex).addClass('main_prd_slide_active2');
+							$('.main_prd_area_'+idx+' .main_prd_slide > li').eq(newIndex+2).addClass('main_prd_slide_active2');
+							//$('.main_prd_slide > li').eq(newIndex+2).addClass('main_prd_slide_active2');
+							var asd_idx = $('.asd').index();
+							
+						},
+					onSlideAfter: function($slideElement, oldIndex, newIndex){
+						
+					}
+				});
+			}
+			main_prd_slide(1)
+		});
+		
+	
+    
+            </script>
+            <!-- text_slider -->
+            <!--      
+                배너 슬라이드
+                플러그인 그대로 이용시 하 ,
+                플러그인 커스텀 중 ,
+                직접 만들시 중~상 
+            -->
+            <div class="text_slider_wrap">
+                <div class="text_slider">
+                    <a href="" class="prev_btn">
+                        <img src="./resources/img/prev_btn.png" alt="prev_btn"/>
+                    </a>
+                    <a href="" class="next_btn">
+                        <img src="./resources/img/next_btn.png" alt="next_btn"/>
+                    </a>
+                    <ul>
+                        <li>
+                            <span>
+                                Monday
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Tuesday
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Wednesday
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Thursday
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Friday
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Saturday
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Sunday
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //text_slider -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //contents -->
+</div>
+
+
+
+</body>
+</html>
