@@ -21,42 +21,28 @@
 <body>
 <header>
     <div class="container">
-        <nav>
-            <ul>
-                <li>
-                    <span>
-                        
-                    </span>
-                </li>
-            </ul>
-        </nav>
+        <button class=" icon-m-btn"> BUTTON 1 </button>
+        <button class=" type01 icon-m-btn"> BUTTON 2 </button>
+        <button class=" type02 icon-m-btn"> BUTTON 3 </button>
+        <button class=" type03 icon-m-btn"> BUTTON 4 </button>
     </div>
 </header>
-<div class="web_publish">
-    <section> 
-        <article>
-            <div class="container">
-                <div class="inner">
+<div class="wrap">
 
-                </div>
-            </div>
-        </article>
-    </section>
-    <!--type01-->
-    <h2 class="layout">기본</h2>
-    <section class="only_w"> 
+    <section class=""> 
         <article>
             <div class="container">
                 <div class="inner">
+                    <h2 class="">기본</h2>
                     <div class="item-wrap">
                         <div class="item">
-                            <div class="btn-wrap btn-wrap-type01">
+                            <div class="btn-wrap">
                                 <div class="left">
                                     <button type="button">TEXT</button>
                                     <button type="button" disabled>TEXT</button>
                                     <button type="button" class="type01">TEXT</button>
                                     <button type="button" class="type01" disabled>TEXT</button>
-                                </div>
+                                </div>    
                                 <div class="right">
                                     <button type="button" class="type02">TEXT</button>
                                     <button type="button" class="type02" disabled>TEXT</button>
@@ -65,7 +51,50 @@
                                 </div>
                             </div>
                             <div style="height:20px;"></div>
-                            <div class="btn-wrap btn-wrap-type01">
+                            <div class="btn-wrap">
+                                <div class="left">
+                                    <button type="button" class="size01">TEXT</button>
+                                    <button type="button" disabled class="size01">TEXT</button>
+                                    <button type="button" class="type01 size01">TEXT</button>
+                                    <button type="button" class="type01 size01" disabled>TEXT</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="type02 size02">TEXT</button>
+                                    <button type="button" class="type02 size02" disabled>TEXT</button>
+                                    <button type="button" class="type03 size02">TEXT</button>
+                                    <button type="button" class="type03 size02" disabled>TEXT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <section class=""> 
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <div class="item-wrap">
+                        <h2 class="">호버,클릭 액션</h2>
+                        <div class="item">
+                            <div class="btn-wrap hover-btn-area btn-click-motion">
+                                <div class="left">
+                                    <button type="button" class="hover1">TEXT</button>
+                                    <button type="button" class="hover2" disabled>TEXT</button>
+                                    <button type="button" class="type01 ">TEXT</button>
+                                    <button type="button" class="type01 " disabled>TEXT</button>
+                                </div>    
+                                <div class="right">
+                                    <button type="button" class="type02 hover3">TEXT</button>
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="icon-button hover4">TEXT</button>
+                                    <button type="button" class="icon-button" disabled>TEXT</button>
+                                </div>
+                            </div>
+                            <div style="height:20px;"></div>
+                            <div class="btn-wrap btn-click-motion">
                                 <div class="left">
                                     <button type="button" class="size01">TEXT</button>
                                     <button type="button" disabled class="size01">TEXT</button>
@@ -86,59 +115,22 @@
             </div>
         </article>
     </section>
-    <!--type02-->
-    <h2 class="layout">호버,클릭 액션</h2>
-    <section class="only_w"> 
-        <article>
-            <div class="container">
-                <div class="inner">
-                    <div class="item-wrap">
-                        <div class="item">
-                            <div class="btn-wrap btn-wrap-type02 hover_btn_area">
-                                <div class="left">
-                                    <button class=" hover1 "> BUTTON 1 </button>
-                                    <button class=" hover2 type01"> BUTTON 2 </button>
-                                    <button class=" hover3 type02"> BUTTON 3 </button>
-                                    <button class=" hover4 type03"> BUTTON 4 </button>
-                                </div>
-                                <div class="right">
-                                    <button type="button" class="type02" disabled>TEXT</button>
-                                    <button type="button" class="type02" disabled>TEXT</button>
-                                    <button type="button" class="icon-button" disabled>TEXT</button>
-                                    <button type="button" class="icon-button" disabled>TEXT</button>
-                                </div>
-                            </div>
-                            <div style="height:20px;"></div>
-                            <div class="btn-wrap btn-wrap-type02 btn-click-motion">
-                                <div class="left">
-                                    <button type="button" class="size01">TEXT</button>
-                                    <button type="button" disabled>TEXT</button>
-                                    <button type="button" class="type01 size02">TEXT</button>
-                                    <button type="button" class="type01" disabled>TEXT</button>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
-    <h2 class="layout">반응형 버튼</h2>
+
     <section class=""> 
         <article>
             <div class="container">
                 <div class="inner">
+                    <h2 class="">반응형 버튼</h2>
                     <div class="item-wrap">
                         <div class="item">
-                            <div class="btn-wrap btn-wrap-type03 responsive-btn-wrap">
+                            <div class="btn-wrap responsive-btn-wrap">
                                 <div class="left">
-                                    <button class=" "> BUTTON 1 </button>
-                                    <button class=" type01"> BUTTON 2 </button>
-                                    <button class=" type02"> BUTTON 3 </button>
-                                    <button class=" type03"> BUTTON 4 </button>
+                                    <button class=" icon-m-btn"> BUTTON 1 </button>
+                                    <button class=" type01 icon-m-btn"> BUTTON 2 </button>
+                                    <button class=" type02 icon-m-btn"> BUTTON 3 </button>
+                                    <button class=" type03 icon-m-btn"> BUTTON 4 </button>
                                 </div>
-                                <div class="right">
+                                <div class="right"> 
                                     <button type="button" class="type02" disabled>TEXT</button>
                                     <button type="button" class="type02" disabled>TEXT</button>
                                     <button type="button" class="icon-button" disabled>TEXT</button>
@@ -146,7 +138,7 @@
                                 </div>
                             </div>
                             <div style="height:20px"></div>
-                            <div class="btn-wrap btn-wrap-type03 responsive-btn-wrap">
+                            <div class="btn-wrap responsive-btn-wrap">
                                 <div class="left">
                                     <button class="size-m-01"> BUTTON 1 </button>
                                     <button class=" type01 size-m-02"> BUTTON 2 </button>

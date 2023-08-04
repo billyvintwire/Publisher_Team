@@ -58,6 +58,7 @@ section{
 	min-height:200px;
 }   
 article{
+	max-width:1080px;
 	margin:0 auto;
 	position:relative;
 	border:1px solid #ddd;
@@ -73,6 +74,11 @@ article{
 }
 .inner.inner-nopad{
 	padding:0;
+}
+.inner h2{
+	margin-bottom:20px;
+	font-size:22px;
+	font-weight: 600;
 }
 .layout-title{
 	font-size:0;
@@ -99,23 +105,22 @@ article{
 .item-row-2 .item{width:50%;}
 .item-row-3 .item{width:33.3333%}
 .item-row-4 .item{width:25%}
-@media (min-width: 320px) and (max-width: 768px){
+@media (min-width: 100px) and (max-width: 768px){
+	.wrap{
+		padding:0 4.16vw;
+	}
 	.only_w{
-
+		display:none;
 	}
 	section.only_w{
-		height:0;
-		min-height:0;
-		overflow:hidden;
-		-webkit-transition:all 0.25s ease-in-out;
-		transition:all 0.25s ease-in-out;
+		 
 	}
 	.container{
 		width:100%;
 		overflow:hidden;
 	}
 	.inner{
-		padding:0.5vw;
+		padding:3vw;
 	}
 
 }

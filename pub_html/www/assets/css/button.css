@@ -15,7 +15,6 @@
 	align-items: center;
 }
 .btn-wrap .left{
-	margin-left:0;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -30,7 +29,6 @@
 	align-items: center;
 }
 .btn-wrap .right{
-	margin-right:0;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -68,7 +66,7 @@ button{
 	border: 1px solid #222222;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	display: inline-flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 		-ms-flex-direction: row;
@@ -79,12 +77,13 @@ button{
 	-webkit-box-align: center;
 		-ms-flex-align: center;
 			align-items: center;
+	vertical-align: middle;
 }
 button:disabled{
 	pointer-events: none;
 }
 /* btn-wrap-type01 */
-.btn-wrap-type01 button {
+  button {
 	min-width: 10rem;
 	max-height: 3.2rem;
 	padding: 0.6rem 0.4rem;
@@ -95,52 +94,52 @@ button:disabled{
 	color: #656565;
 	border-color: #656565;
 }
-.btn-wrap-type01 button:hover {
+  button:hover {
 	color: #ED1C24;
 	border-color: #ED1C24;
 }
-.btn-wrap-type01 button:disabled {
+  button:disabled {
 	border-color: #aaaaaa;
 	background: #eeeeee;
 	pointer-events: none;
 }
-.btn-wrap-type01 button.type01 {
+  button.type01 {
 	background: #222222;
 	border-color: #222222;
 	color: #ffffff;
 }
-.btn-wrap-type01 button.type01:hover {
+  button.type01:hover {
 	border-color: #ED1C24;
 	background: #ED1C24;
 }
-.btn-wrap-type01 button.type01:disabled {
+  button.type01:disabled {
 	border-color: #aaaaaa;
 	background: #aaaaaa;
 	color: #ffffff;
 }
-.btn-wrap-type01 button.type02 {
+  button.type02 {
 	border-color: #ED1C24;
 	color: #ED1C24;
 	border-color: #ED1C24;
 }
-.btn-wrap-type01 button.type02:hover {
+  button.type02:hover {
 	color: #ffffff;
 	background: #ED1C24;
-}
-.btn-wrap-type01 button.type02:disabled {
+}.responsive-btn-wrap
+  button.type02:disabled {
 	border-color: #aaaaaa;
 	background: #eeeeee;
 	color: #656565;
 }
-.btn-wrap-type01 button.size01 {
+  button.size01 {
 	min-width: auto;
 	padding: 0.6rem 1.2rem;
 }
-.btn-wrap-type01 button.size02{
+  button.size02{
 	min-width: auto;
 	padding: 0.2rem 0.6rem;font-size:1rem;
 }
-.btn-wrap-type01 button.icon-button::before {
+  button.icon-button::before {
 	content: "";
 	width: 2rem;
 	height: 2rem;
@@ -151,7 +150,7 @@ button:disabled{
 	background-size: contain;
 	background-position: center center;
 }
-.btn-wrap-type01 button.icon-button.type01::before {
+  button.icon-button.type01::before {
 	-webkit-filter: none;
 			filter: none;
 }
@@ -164,144 +163,45 @@ button:disabled{
 	rgba(0,0,0,0.5) : 색상값과 투명도 임
 	inset : 원그림의 외부가 아니라 내부에서만 표현하라는 뜻
 */
-.btn-wrap-type02 button {
-	min-width: 10rem;
-	max-height: 3.2rem;
-	padding: 0.6rem 0.4rem;
-	font-size: 1.4rem;
-	font-weight: 500;
-	border-radius: 0.4rem;
-	background: #ffffff;
-	color: #656565;
-	border-color: #656565;
+.hover-btn-area button:hover {
+
+	box-shadow:10rem 0 0 0 rgba(0,0,0,0.5) inset;
 }
-.btn-wrap-type02 button:hover {
-	color: #ED1C24;
-	border-color: #ED1C24;
-}
-.btn-wrap-type02 button:disabled {
-	border-color: #aaaaaa;
-	background: #eeeeee;
-	pointer-events: none;
-}
-.btn-wrap-type02 button.type01 {
-	background: #222222;
-	border-color: #222222;
-	color: #ffffff;
-}
-.btn-wrap-type02 button.type01:hover {
-	border-color: #ED1C24;
-	background: #ED1C24;
-}
-.btn-wrap-type02 button.type01:disabled {
-	border-color: #aaaaaa;
-	background: #aaaaaa;
-	color: #ffffff;
-}
-.btn-wrap-type02 button.type02 {
-	border-color: #ED1C24;
-	color: #ED1C24;
-	border-color: #ED1C24;
-}
-.btn-wrap-type02 button {
-	min-width: 10rem;
-	max-height: 3.2rem;
-	padding: 0.6rem 0.4rem;
-	font-size: 1.4rem;
-	font-weight: 500;
-	border-radius: 0.4rem;
-	background: #ffffff;
-	color: #656565;
-	border-color: #656565;
-}
-.btn-wrap-type02.hover_btn_area button {
+.hover-btn-area button{
 	-webkit-transition:all 0.9s, color 0.3s;  
 	transition:all 0.9s, color 0.3s;  
 }
-.hover_btn_area button:hover{color:#fff;}
-.hover_btn_area .hover1:hover{
+.hover-btn-area button:hover{color:#fff;}
+.hover-btn-area .hover1:hover{
 	box-shadow:10rem 0 0 0 rgba(0,0,0,0.5) inset;
 }
-.hover_btn_area .hover2:hover{
+.hover-btn-area .hover2:hover{
 	box-shadow:-10rem 0 0 0 rgba(0,0,0,0.5) inset;
 }
-.hover_btn_area .hover3:hover{
+.hover-btn-area .hover3:hover{
 	box-shadow: 0 8rem 0 0  rgba(0,0,0,0.25) inset, 
 				0 -8rem 0 0 rgba(0,0,0,0.25) inset;
 }
-.hover_btn_area .hover4:hover{
+.hover-btn-area .hover4:hover{
 	box-shadow: 10rem 0 0 0 rgba(0,0,0,0.25) inset, 
 			   -10rem 0 0 0 rgba(0,0,0,0.25) inset;
 }
 
-.btn-wrap-type02.btn-click-motion button{
+.btn-click-motion button{
 	box-shadow: 0 0.3rem 0.6rem #adadad;
 }
-.btn-wrap-type02.btn-click-motion button:hover{
-	border:none;
+ .btn-click-motion button:hover{
+	border:1px solid transparent;
 }
-.btn-wrap-type02.btn-click-motion button:active{
+ .btn-click-motion button:active{
 	box-shadow: inset 0 0.3rem 0.6rem #adadad;
 
 }
 
 
 /*btn-wrap-type03 responsive-btn-wrap*/
-.btn-wrap-type03 button {
-	min-width: 10rem;
-	max-height: 3.2rem;
-	padding: 0.6rem 0.4rem;
-	font-size: 1.4rem;
-	font-weight: 500;
-	border-radius: 0.4rem;
-	background: #ffffff;
-	color: #656565;
-	border-color: #656565;
-}
-.btn-wrap-type03 button:hover {
-	color: #ED1C24;
-	border-color: #ED1C24;
-}
-.btn-wrap-type03 button:disabled {
-	border-color: #aaaaaa;
-	background: #eeeeee;
-	pointer-events: none;
-}
-.btn-wrap-type03 button.type01 {
-	background: #222222;
-	border-color: #222222;
-	color: #ffffff;
-}
-.btn-wrap-type03 button.type01:hover {
-	border-color: #ED1C24;
-	background: #ED1C24;
-}
-.btn-wrap-type03 button.type01:disabled {
-	border-color: #aaaaaa;
-	background: #aaaaaa;
-	color: #ffffff;
-}
-.btn-wrap-type03 button.type02 {
-	border-color: #ED1C24;
-	color: #ED1C24;
-	border-color: #ED1C24;
-}
-.btn-wrap-type03 button.icon-button::before {
-	content: "";
-	width: 2rem;
-	height: 2rem;
-	-webkit-filter: invert(100%) sepia(5%) saturate(44%) hue-rotate(137deg) brightness(100%) contrast(73%);
-			filter: invert(100%) sepia(5%) saturate(44%) hue-rotate(137deg) brightness(100%) contrast(73%);
-	background-image: url(../images/icon/excel_icon.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-}
-.btn-wrap-type03 button.icon-button.type01::before {
-	-webkit-filter: none;
-			filter: none;
-}
-@media (min-width: 320px) and (max-width: 768px){
+
+@media (min-width: 100px) and (max-width: 768px){
 	.btn-wrap{
 		width:100%;
 		-webkit-box-lines: multiple;
@@ -309,12 +209,10 @@ button:disabled{
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
+	.btn-wrap .right,
 	.btn-wrap .left{
-		width:100%;
-		margin-bottom:4vw;
-	}
-	.btn-wrap .right{
-		width:100%;
+		display:block;
+		width: 100%;
 	}
 	.btn-wrap .left button{
 		margin-right:1.2rem;
@@ -323,17 +221,40 @@ button:disabled{
 		margin-right:0;
 	}
 	.btn-wrap .right button{
-		margin-right:1.2rem;
+		margin-right:0;
 	}
 	.btn-wrap .right button:last-child{
 		margin-right:0;
 	}  
 	  
-	.btn-wrap-type03 button{
-		
+	.responsive-btn-wrap button{
+		min-width:auto;
+		font-size:3.07692vw;
+		width:35.89744vw;
+		height:8vw;
 	}
-	.btn-wrap-type03 button.size-m-01{
+	.responsive-btn-wrap button.size-m-01{
 		width:100%;
+	}
+	.responsive-btn-wrap button.size-m-02{
+		width:50%;
+	}
+	.responsive-btn-wrap button.size-m-03{
+		width:33.333%;
+	}
+	.responsive-btn-wrap button.size-m-04{
+		width:25.64103vw;
+	}
+	.responsive-btn-wrap button.icon-m-btn{
+		font-size:0;
+		height:8.20513vw;
+		width:8.20513vw;
+		max-height: 8.20513vw;
+		padding:0;
+		background-image:url(../images/icon/date_icon.png);
+		background-repeat: no-repeat;
+		background-position:center center;
+		background-size:5.12821vw;
 	}
 }
 
