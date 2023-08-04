@@ -47,7 +47,7 @@
                     <input id="containerPx" type="text" value="768" data-value="" placeholder="window width">
                 </div>
                 <div class="input-wrap">
-                    <label for="" style="display:block;font-size:14px;margin-bottom:10px;">vw</label>
+                    <label for="" style="display:block;font-size:14px;margin-bottom:10px;">vw,%</label>
                     <input id="contentVw" type="text" value="" data-value="" placeholder="vw value">
                 </div>
                 <div style="margin-top:30px;height:30px;border-top:1px solid #ddd"></div>
@@ -98,8 +98,6 @@
     </section>
     <script>
         window.onload = function(){
-            
-        
             function calculator(){
                 var contentPx = $('#contentPx');
                 var containerPx = $('#containerPx');
@@ -108,8 +106,6 @@
                 var vwpx = (contentPx.val() / containerPx.val()) * 100;
                 vwpx = vwpx.toFixed(5)
                 contentVw.val(vwpx)
-
-                
                 for (let index = 0; index < contents.find('input').length; index++) {
                     let vwpxs = (contents.find('input').eq(index).attr('data-value') / containerPx.val()) * 100
                     vwpxs = vwpxs.toFixed(5)
