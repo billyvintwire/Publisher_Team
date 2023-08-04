@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 가이드</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- 로컬소스 -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/pub.css" />
+    <link rel="stylesheet" href="../assets/css/button.css" />
+</head>
+<body>
+
+<div class="web_publish">
+    <!--
+    <h2 class="layout-title">아이템</h2>
+    <section> 
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <div>
+                        <div class="form-wrap type01">
+                            <ul class="form-table input-list">
+                                <li class="form-list">
+                                    <div class="form-title input-tit"><span>검색어</span></div>
+                                    <div class="input-cont">
+                                        
+                                    </div>
+                                </li>
+                                <li class="form-tr">
+                                    <div class="input-tit"><span>주문기간</span></div>
+                                    <div class="input-cont">
+                                        <ul class="period-list">
+                                            <li class="on">1주</li>
+                                            <li>1개월</li>
+                                            <li>3개월</li>
+                                            <li>1년</li>
+                                        </ul>
+                                        <div class="flex-wrap center">
+                                            <div class="input-wrap date">
+                                                <label for="datepicker01" class="hide">캘린더</label>
+                                                <input type="text" id="datepicker01" class="datepicker">
+                                            </div>
+                                            <b>~</b>
+                                            <div class="input-wrap date">
+                                                <label for="datepicker02" class="hide">캘린더</label>
+                                                <input type="text" id="datepicker02" class="datepicker">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-tr">
+                                    <div class="input-tit"><span>처리현황</span></div>
+                                    <div class="input-cont">
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+    </section>
+    -->
+    <h2 class="layout-title">아이템</h2>
+    <section>
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <div class="item-wrap item-row-wrap">
+                        <div class="item">
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>체크박스</span>
+                                </div>
+                                <div class="input-wrap checkbox">
+                                    <input id="checkbox01_01" type="checkbox" name="check01">
+                                    <label for="checkbox01_01">전체</label>
+                                </div>
+                                <div class="input-wrap checkbox disabled">
+                                    <input id="checkbox01_02" type="checkbox" name="check02">
+                                    <label for="checkbox01_02">TEXTTEXTTEXT</label>
+                                </div>
+                                <div class="input-wrap checkbox ">
+                                    <input id="checkbox01_03" type="checkbox" name="check03">
+                                    <label for="checkbox01_03" class="emphasis">TEXTTEXTTEXTTEXTTEXT</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>체크박스</span>
+                                </div>
+                                <div class="input-wrap checkbox">
+                                    <input id="checkbox01_01" type="checkbox" name="check01">
+                                    <label for="checkbox01_01">전체</label>
+                                </div>
+                                <div class="input-wrap checkbox disabled">
+                                    <input id="checkbox01_02" type="checkbox" name="check02">
+                                    <label for="checkbox01_02">TEXTTEXTTEXT</label>
+                                </div>
+                                <div class="input-wrap checkbox ">
+                                    <input id="checkbox01_03" type="checkbox" name="check03">
+                                    <label for="checkbox01_03" class="emphasis">TEXTTEXTTEXTTEXTTEXT</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>텍스트 체크박스</span>
+                                </div>
+                                <div class="input-wrap checkbox txt-check">
+                                    <input id="checkbox01_01" type="checkbox" name="check01">
+                                    <label for="checkbox01_01">전체</label>
+                                </div>
+                                <div class="input-wrap checkbox txt-check disabled">
+                                    <input id="checkbox01_02" type="checkbox" name="check02">
+                                    <label for="checkbox01_02">TEXTTEXTTEXT</label>
+                                </div>
+                                <div class="input-wrap checkbox txt-check">
+                                    <input id="checkbox01_03" type="checkbox" name="check03">
+                                    <label for="checkbox01_03" class="emphasis">TEXTTEXTTEXTTEXTTEXT</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>텍스트 체크박스</span>
+                                </div>
+                                <div class="input-wrap select">
+                                    <label for="search_select" class="hide">검색어</label>
+                                    <select name="search_select" id="search_select">
+                                        <option value="전체">전체</option>
+                                        <option value="전체01">전체01</option>
+                                        <option value="전체02">전체02</option>
+                                    </select>
+                                </div>
+                                <div class="input-wrap w-400">
+                                    <label for="search_input" class="hide">검색어</label>
+                                    <input type="text" id="search_input">
+                                </div>
+                                <div class="input-wrap ">
+                                    <input type="text" id="" placeholder="TEXT">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--type01-->
+    <section> 
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="btn-wrap btn-wrap-type01">
+                                <div class="left">
+                                    <button type="button">TEXT</button>
+                                    <button type="button" disabled>TEXT</button>
+                                    <button type="button" class="type01">TEXT</button>
+                                    <button type="button" class="type01" disabled>TEXT</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="type02">TEXT</button>
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="icon-button">TEXT</button>
+                                    <button type="button" class="icon-button" disabled>TEXT</button>
+                                </div>
+                            </div>
+                            <div style="height:20px;"></div>
+                            <div class="btn-wrap btn-wrap-type01">
+                                <div class="left">
+                                    <button type="button" class="size01">TEXT</button>
+                                    <button type="button" disabled class="size01">TEXT</button>
+                                    <button type="button" class="type01 size01">TEXT</button>
+                                    <button type="button" class="type01 size01" disabled>TEXT</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="type02 size02">TEXT</button>
+                                    <button type="button" class="type02 size02" disabled>TEXT</button>
+                                    <button type="button" class="type03 size02">TEXT</button>
+                                    <button type="button" class="type03 size02" disabled>TEXT</button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--type02-->
+    <section> 
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="btn-wrap btn-wrap-type02 hover_btn_area">
+                                <div class="left">
+                                    <button class=" hover1 "> BUTTON 1 </button>
+                                    <button class=" hover2 type01"> BUTTON 2 </button>
+                                    <button class=" hover3 type02"> BUTTON 3 </button>
+                                    <button class=" hover4 type03"> BUTTON 4 </button>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="icon-button" disabled>TEXT</button>
+                                    <button type="button" class="icon-button" disabled>TEXT</button>
+                                </div>
+                            </div>
+                            <div style="height:20px;"></div>
+                            <div class="btn-wrap btn-wrap-type02 btn-click-motion">
+                                <div class="left">
+                                    <button type="button" class="size01">TEXT</button>
+                                    <button type="button" disabled>TEXT</button>
+                                    <button type="button" class="type01 size02">TEXT</button>
+                                    <button type="button" class="type01" disabled>TEXT</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="type02">TEXT</button>
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="type03">TEXT</button>
+                                    <button type="button" class="type03" disabled>TEXT</button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</div>
+
+
+
+
+</body>
+</html>

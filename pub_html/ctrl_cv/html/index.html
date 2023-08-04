@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- 로컬소스 -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- header 영역입니다. -->
+        <header id="header">
+            <div class="con-box header-inner">
+                <div class="logo">
+                    <a href="javascript:void(0)"><img src="./assets/images/common/logo.png" alt="YG-1 온라인 주문센터 관리자" /></a>
+                </div>
+                <div class="gnb-menu">
+                    <ul class="gnb-menu-list">
+                        <li>
+                            <a href="javascript:viod(0)" class="depth1">주문</a>
+                            <ul class="depth2-list">
+                                <li><a href="javascript:void(0)" class="depth2">주문리스트</a></li>
+                                <li><a href="javascript:void(0)" class="depth2">견적의뢰담당자 관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:viod(0)" class="depth1">고객</a>
+                            <ul class="depth2-list">
+                                <li><a href="javascript:void(0)" class="depth2">고객리스트</a></li>
+                                <li><a href="javascript:void(0)" class="depth2">고객등록</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:viod(0)" class="depth1">메인화면</a>
+                            <ul class="depth2-list">
+                                <li><a href="javascript:void(0)" class="depth2">온라인배너</a></li>
+                                <li><a href="javascript:void(0)" class="depth2">베스트제품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:viod(0)" class="depth1">콘텐츠</a>
+                            <ul class="depth2-list">
+                                <li><a href="javascript:void(0)" class="depth2">팝업</a></li>
+                                <li><a href="javascript:void(0)" class="depth2">공지사항</a></li>
+                                <li><a href="javascript:void(0)" class="depth2">메뉴설정</a></li>
+                                <li><a href="javascript:void(0)" class="depth2">SEO</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:viod(0)" class="depth1">관리자계정</a>
+                            <ul class="depth2-list">
+                                <li><a href="javascript:void(0)" class="depth2">관리자계정 리스트</a></li>
+                                <li><a href="javascript:void(0)" class="depth2">관리자계정 등록</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <div class="account-info">
+                        <div class="account-img"><img src="./assets/images/common/account_img.png" alt="계정" /></div>
+                        <strong><span>홍길동</span> 님</strong>
+                    </div>
+                    <button type="button" class="size01">로그아웃</button>
+                </div>
+            </div>
+        </header>
+        <!-- //header 영역입니다. -->
+        <div id="wrap" class="dashboard">
+            <div class="con-box">
+                <div class="cont-tit">
+                    <div>
+                        <strong>Dashboard</strong>
+                        <div class="input-wrap date">
+                            <label for="datepicker01" class="hide">대시보드 달력</label>
+                            <input type="text" id="datepicker01" class="datepicker" />
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-inner">
+                    <div class="flex-between">
+                        <div>
+                            <div class="item-wrap">
+                                <div class="item-tit">
+                                    <div class="tit-wrap">
+                                        <strong>주문 <span>153</span> 건</strong>
+                                        <div class="switch">
+                                            <button type="button" class="btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                                <div class="handle"></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:viod(0)" class="more-link">바로가기</a>
+                                </div>
+                                <div class="item-cont">
+                                    <ul class="menu-list">
+                                        <li class="item-box">
+                                            <strong class="menu-tit">
+                                                <img src="./assets/images/icon/order_icon.png" alt="주문요청">
+                                                주문요청
+                                            </strong>
+                                            <div class="menu-num"><strong>10</strong> 건</div>
+                                        </li>
+                                        <li class="item-box">
+                                            <strong class="menu-tit">
+                                                <img src="./assets/images/icon/preparing_icon.png" alt="제품 준비중">
+                                                제품 준비중
+                                            </strong>
+                                            <div class="menu-num"><strong>100</strong> 건</div>
+                                        </li>
+                                        <li class="item-box">
+                                            <strong class="menu-tit">
+                                                <img src="./assets/images/icon/shipment_icon.png" alt="출하완료">
+                                                출하완료
+                                            </strong>
+                                            <div class="menu-num"><strong>40</strong> 건</div>
+                                        </li>
+                                        <li class="item-box">
+                                            <strong class="menu-tit">
+                                                <img src="./assets/images/icon/cancle_icon.png" alt="취소완료">
+                                                취소완료
+                                            </strong>
+                                            <div class="menu-num"><strong>3</strong> 건</div>
+                                        </li>
+                                    </ul>
+                                    <div class="table-wrap">
+                                        <div class="table-wrap-cont">
+                                            <table>
+                                                <caption>주문 테이블</caption>
+                                                <colgroup>
+                                                    <col width="auto" />
+                                                    <col width="auto" />
+                                                    <col width="auto" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th><div>구분</div></th>
+                                                        <th><div>주문 수량</div></th>
+                                                        <th><div>총 금액(원)</div></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><div>인덱서블 인서트&홀더</div></td>
+                                                        <td><div>300</div></td>
+                                                        <td><div>999,999,999</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div>인덱서블 인서트&홀더</div></td>
+                                                        <td><div>300</div></td>
+                                                        <td><div>999,999,999</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div>인덱서블 인서트&홀더</div></td>
+                                                        <td><div>300</div></td>
+                                                        <td><div>999,999,999</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div>인덱서블 인서트&홀더</div></td>
+                                                        <td><div>300</div></td>
+                                                        <td><div>999,999,999</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div>인덱서블 인서트&홀더</div></td>
+                                                        <td><div>300</div></td>
+                                                        <td><div>999,999,999</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div>인덱서블 인서트&홀더</div></td>
+                                                        <td><div>300</div></td>
+                                                        <td><div>999,999,999</div></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-wrap">
+                                <div class="item-tit">
+                                    <div class="tit-wrap">
+                                        <strong>공지사항 <span>15</span> 건</strong>
+                                    </div>
+                                    <a href="javascript:viod(0)" class="more-link">바로가기</a>
+                                </div>
+                                <div class="item-cont">
+                                    <div class="item-box">
+                                        <ul class="list-type01">
+                                            <!-- 고정게시물에 fixation클래스 추가부탁드립니다. -->
+                                            <li class="fixation">
+                                                <div class="num">1</div>
+                                                <div>
+                                                    <p>공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다.공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다.</p>
+                                                    <div class="date">2023.06.12</div>
+                                                </div>
+                                            </li>
+                                            <li class="fixation">
+                                                <div class="num">2</div>
+                                                <div>
+                                                    <p>공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다.</p>
+                                                    <div class="date">2023.06.12</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="num">3</div>
+                                                <div>
+                                                    <p>공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다.</p>
+                                                    <div class="date">2023.06.12</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="num">4</div>
+                                                <div>
+                                                    <p>공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다.</p>
+                                                    <div class="date">2023.06.12</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="num">5</div>
+                                                <div>
+                                                    <p>공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다. 공지사항 제목이 출력 됩니다.</p>
+                                                    <div class="date">2023.06.12</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item-wrap">
+                                <div class="item-tit">
+                                    <div class="tit-wrap">
+                                        <strong>베스트 제품</strong>
+                                        <div class="swiper-controls product-controls">
+                                            <div class="swiper-button swiper-button-prev"></div>
+                                            <div class="swiper-button swiper-button-next"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:viod(0)" class="more-link">바로가기</a>
+                                </div>
+                                <div class="item-cont">
+                                    <div class="swiper" id="bestProduct">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide item-box">
+                                                <ul class="product-list">
+                                                    <li>
+                                                        <strong class="product-tit">인덱서블 인서트&홀더</strong>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>터닝인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링언서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>드릴링인서</span>
+                                                            </li>
+                                                            <li class="tag hot">
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>절단&그루빙</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링커터</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <strong class="product-tit">인덱서블 인서트&홀더</strong>
+                                                        <ul>
+                                                            <li class="tag new">
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>터닝인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링언서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>드릴링인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>절단&그루빙</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링커터</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <strong class="product-tit">인덱서블 인서트&홀더</strong>
+                                                        <ul>
+                                                            <li class="tag new">
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>터닝인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링언서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>드릴링인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>절단&그루빙</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링커터</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="swiper-slide item-box">
+                                                <ul class="product-list">
+                                                    <li>
+                                                        <strong class="product-tit">인덱서블 인서트&홀더</strong>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>터닝인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링언서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>드릴링인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>절단&그루빙</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링커터</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <strong class="product-tit">인덱서블 인서트&홀더</strong>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>터닝인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링언서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>드릴링인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>절단&그루빙</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링커터</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <strong class="product-tit">인덱서블 인서트&홀더</strong>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>터닝인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링언서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>드릴링인서</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>절단&그루빙</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-preview"><img src="./assets/images/test_img.png" alt="테스트이미지"></div>
+                                                                <span>밀링커터</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-wrap">
+                                <div class="item-tit">
+                                    <div class="tit-wrap">
+                                        <strong>팝업 <span>1</span> 건</strong>
+                                    </div>
+                                    <a href="javascript:viod(0)" class="more-link">바로가기</a>
+                                </div>
+                                <div class="item-cont">
+                                    <div class="item-box">
+                                        <ul class="list-type01">
+                                            <li>
+                                                <div class="num">1</div>
+                                                <div>
+                                                    <p>신제품 이벤트 팝업</p>
+                                                    <div class="alert">5일 3시간 50분 남음</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright 영역입니다. -->
+        <div id="copyright">
+            <div class="con-box">
+                Copyright 2023. YG-1 Co., Ltd. All rights reserved.
+            </div>
+        </div>
+        <!-- //copyright 영역입니다. -->
+    </div>
+</body>
+</html>

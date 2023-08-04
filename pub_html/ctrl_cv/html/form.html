@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 가이드</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- 로컬소스 -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/pub.css" />
+    <link rel="stylesheet" href="./assets/css/button.css" />
+</head>
+<body>
+
+<div class="web_publish">
+    <div class="side_bar">
+        <ol>
+            <li>
+                css cross
+            </li>
+            <li>
+                style btn
+            </li>
+        </ol>
+        <div class="flex-cross">
+            <pre >
+    /* (기본필수) flex container 생성 */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    /* 주축을 행(row)으로 설정 */
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    /* 주축을 열(column)로 설정 */
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    /* row-reverse */
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+
+    /* column-reverse */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+
+    /* 줄바꿈 방지 */
+    -webkit-box-lines: single;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+
+    /* 줄바꿈 (Android 2.1~4.3 이하 지원 X) */ 
+    -webkit-box-lines: multiple;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    /* [정렬] 주축 - 시작점 기준 */
+    -webkit-box-pack: start;
+    -moz-box-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+
+    /* [정렬] 주축 - 끝점 기준 */
+    -webkit-box-pack: end;
+    -moz-box-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+
+    /* [정렬] 주축 - 가운데 기준 */
+    -webkit-box-pack: center;
+    -moz-box-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    /* [정렬] space-between */
+    -webkit-box-pack: justify;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    /* [정렬] 교차축 - 시작점 기준 */
+    -webkit-box-align: start;
+    -moz-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+    /* [정렬] 교차축 - 끝점 기준 */
+    -webkit-box-align: end;
+    -moz-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+
+    /* [정렬] 교차축 - 가운데 기준 */
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    /* [정렬] 교차축 - stretch */
+    -webkit-box-align: stretch;
+    -moz-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+    /* [정렬] 교차축 - baseline */
+    -webkit-box-align: baseline;
+    -moz-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+            </pre>
+        </div>
+        <div>
+            <h6></h6>
+            <ul>
+                <li>
+                    <button></button>
+                </li>
+                <li>
+                    <button></button>
+                </li>
+                <li>
+                    <button></button>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <header >
+
+    </header>
+
+    <h2 class="layout-title">아이템</h2>
+    <section> 
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <div>
+                        <div class="form-wrap type01">
+                            <ul class="form-table input-list">
+                                <li class="form-list">
+                                    <div class="form-title input-tit"><span>검색어</span></div>
+                                    <div class="input-cont">
+                                        
+                                    </div>
+                                </li>
+                                <li class="form-tr">
+                                    <div class="input-tit"><span>주문기간</span></div>
+                                    <div class="input-cont">
+                                        <ul class="period-list">
+                                            <li class="on">1주</li>
+                                            <li>1개월</li>
+                                            <li>3개월</li>
+                                            <li>1년</li>
+                                        </ul>
+                                        <div class="flex-wrap center">
+                                            <div class="input-wrap date">
+                                                <label for="datepicker01" class="hide">캘린더</label>
+                                                <input type="text" id="datepicker01" class="datepicker">
+                                            </div>
+                                            <b>~</b>
+                                            <div class="input-wrap date">
+                                                <label for="datepicker02" class="hide">캘린더</label>
+                                                <input type="text" id="datepicker02" class="datepicker">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="form-tr">
+                                    <div class="input-tit"><span>처리현황</span></div>
+                                    <div class="input-cont">
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+    </section>
+    <h2 class="layout-title">아이템</h2>
+    <section> 
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <div class="item-wrap item-row-1">
+                        <div class="item">
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>체크박스</span>
+                                </div>
+                                <div class="input-wrap checkbox">
+                                    <input id="checkbox01_01" type="checkbox" name="check01">
+                                    <label for="checkbox01_01">전체</label>
+                                </div>
+                                <div class="input-wrap checkbox disabled">
+                                    <input id="checkbox01_02" type="checkbox" name="check02">
+                                    <label for="checkbox01_02">TEXTTEXTTEXT</label>
+                                </div>
+                                <div class="input-wrap checkbox ">
+                                    <input id="checkbox01_03" type="checkbox" name="check03">
+                                    <label for="checkbox01_03" class="emphasis">TEXTTEXTTEXTTEXTTEXT</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>체크박스</span>
+                                </div>
+                                <div class="input-wrap checkbox">
+                                    <input id="checkbox01_01" type="checkbox" name="check01">
+                                    <label for="checkbox01_01">전체</label>
+                                </div>
+                                <div class="input-wrap checkbox disabled">
+                                    <input id="checkbox01_02" type="checkbox" name="check02">
+                                    <label for="checkbox01_02">TEXTTEXTTEXT</label>
+                                </div>
+                                <div class="input-wrap checkbox ">
+                                    <input id="checkbox01_03" type="checkbox" name="check03">
+                                    <label for="checkbox01_03" class="emphasis">TEXTTEXTTEXTTEXTTEXT</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>텍스트 체크박스</span>
+                                </div>
+                                <div class="input-wrap checkbox txt-check">
+                                    <input id="checkbox01_01" type="checkbox" name="check01">
+                                    <label for="checkbox01_01">전체</label>
+                                </div>
+                                <div class="input-wrap checkbox txt-check disabled">
+                                    <input id="checkbox01_02" type="checkbox" name="check02">
+                                    <label for="checkbox01_02">TEXTTEXTTEXT</label>
+                                </div>
+                                <div class="input-wrap checkbox txt-check">
+                                    <input id="checkbox01_03" type="checkbox" name="check03">
+                                    <label for="checkbox01_03" class="emphasis">TEXTTEXTTEXTTEXTTEXT</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-title">
+                                    <span>텍스트 체크박스</span>
+                                </div>
+                                <div class="input-wrap select">
+                                    <label for="search_select" class="hide">검색어</label>
+                                    <select name="search_select" id="search_select">
+                                        <option value="전체">전체</option>
+                                        <option value="전체01">전체01</option>
+                                        <option value="전체02">전체02</option>
+                                    </select>
+                                </div>
+                                <div class="input-wrap w-400">
+                                    <label for="search_input" class="hide">검색어</label>
+                                    <input type="text" id="search_input">
+                                </div>
+                                <div class="input-wrap ">
+                                    <input type="text" id="" placeholder="TEXT">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="btn-wrap">
+                                <div class="left">
+                                    <button type="button">TEXT</button>
+                                    <button type="button" disabled>TEXT</button>
+                                    <button type="button" class="type01">TEXT</button>
+                                    <button type="button" class="type01" disabled>TEXT</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="type02">TEXT</button>
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="type03">TEXT</button>
+                                    <button type="button" class="type03" disabled>TEXT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+    </section>
+</div>
+
+
+</body>
+</html>
