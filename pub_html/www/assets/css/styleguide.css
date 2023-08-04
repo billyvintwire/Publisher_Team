@@ -1,0 +1,118 @@
+#style-guide.style-guide {
+	padding: 2.4rem;
+	background: #ffffff;
+	border: 1px solid #333;
+	width:1080px;
+	margin:0 auto;
+  }
+  #style-guide.style-guide .con-box > h3 {
+	width: 100%;
+	display: block;
+	padding: 1rem;
+	color: #ffffff;
+	font-size: 4rem;
+	font-weight: bold;
+	text-align: center;
+	background: #222222;
+  }
+  #style-guide.style-guide .con-box > div {
+	padding: 2rem;
+	margin-top: 4rem;
+	border: 1px solid #000;
+  }
+  #style-guide.style-guide .con-box > div > strong {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1.6rem;
+  }
+  #style-guide.style-guide .con-box > div .cont-inner {
+	gap: 2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	-webkit-box-pack: start;
+		-ms-flex-pack: start;
+			justify-content: flex-start;
+	-webkit-box-align: start;
+		-ms-flex-align: start;
+			align-items: flex-start;
+  }
+  #style-guide.style-guide .con-box .tab-area {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+  }
+  #style-guide.style-guide .con-box .tab-area > li {
+	width: 100%;
+  }
+  #style-guide.style-guide .con-box .tab-area > li > a {
+	width: 100%;
+	padding: 1.6rem 0;
+	font-weight: bold;
+	border-radius: 3rem;
+	text-align: center;
+	display: block;
+	background: #222222;
+	color: #ffffff;
+  }
+  #style-guide.style-guide .con-box .type-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+	-webkit-box-pack: start;
+		-ms-flex-pack: start;
+			justify-content: flex-start;
+	-webkit-box-align: start;
+		-ms-flex-align: start;
+			align-items: flex-start;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	gap: 3rem 2.4rem;
+  }
+  #style-guide.style-guide .con-box .type-list:not(:last-child) {
+	margin-bottom: 2.4rem;
+  }
+  #style-guide.style-guide .con-box .type-list > li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+	-webkit-box-pack: start;
+		-ms-flex-pack: start;
+			justify-content: flex-start;
+	-webkit-box-align: start;
+		-ms-flex-align: start;
+			align-items: flex-start;
+	gap: 1rem;
+	margin-top: 0;
+	width:100%;
+  }
+  #style-guide.style-guide .con-box .type-list > li.column-type {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+  }
+  #style-guide.style-guide .con-box .type-list > li span {
+	font-size: 1.4rem;
+	display: block;
+	margin-bottom: 1rem;
+  }
+  #style-guide.style-guide .con-box .type-list > li > button:not(:first-child) {
+	margin-top: 1rem;
+  }
+  #style-guide.style-guide .con-box .type-list > li > div.flex-wrap {
+	gap: 1.2rem;
+  }
+  
