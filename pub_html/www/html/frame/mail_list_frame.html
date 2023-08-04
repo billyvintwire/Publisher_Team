@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>결재 문서양식</title>
+    <script>
+        window.onload = function(){
+            var wh = document.body.offsetWidth;
+            var frameMargin = ((wh - 1080)/2)-15;
+            var container_frameset = window.document.getElementById('container');
+            var basic_famreCols = container_frameset.cols.substr(3,6);
+            container_frameset.cols = frameMargin+basic_famreCols;
+            
+            window.onresize = function(){
+                var wh = document.body.offsetWidth;
+                var frameMargin = ((wh - 1080)/2)-15;
+                container_frameset.cols = frameMargin+basic_famreCols;
+            }
+        } 
+    </script>
+    <frameset id="container" cols="420,255,*" frameborder="NO" border="0" framespacing="0" name="container" >
+        <frame height="auto" backgroundColor="#EEF1F2" frameborder="0" scrolling="no" src="./layout/margin-left.html" id="margin-left" name="margin-left" />
+        <frame height="auto" frameborder="0" scrolling="no" src="./mail/mail_left.html" id="left" name="left" />
+        <frame height="auto" frameborder="0" scrolling="auto" src="./mail/mail_list.html" id="contents" name="contents" />
+    </frameset>
+    
+</head>
+<body>
+
+</body>
+
+</html>
+
+

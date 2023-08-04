@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>매인 </title>
+    <script>
+        window.onload = function(){
+            var wh = document.body.offsetWidth;
+            var wheight = document.body.scrollHeight;
+            var container_frameset = window.document.getElementById('container');
+            var wrapper = window.frames['contents'].document.getElementById('wrapper');
+           
+            var contentsH = getComputedStyle(wrapper).height;
+            var wrapperHeight = Number(contentsH.replace('px',''));
+            
+            if(wrapperHeight >= wheight && wh > 1120 ){
+                container_frameset.cols = "15,*"
+            }else{
+                container_frameset.cols = "0,*"
+            }
+            window.onresize = function(){
+                var wh = document.body.offsetWidth;
+                var wheight = document.body.scrollHeight;
+                if(wrapperHeight >= wheight && wh > 1120 ){
+                    container_frameset.cols = "15,*"
+                }else{
+                    container_frameset.cols = "0,*"
+                }
+            }
+        }
+    </script>
+
+    <frameset id="container" cols="15,*" frameborder="NO" border="0" framespacing="0" name="container" >
+        <frame height="auto" backgroundColor="#EEF1F2" frameborder="0" scrolling="no" src="./layout/margin-left.html" id="margin-left" name="margin-left" />
+        <frame height="auto" frameborder="0" scrolling="auto" src="./main/main.html" id="contents" name="contents" />
+    </frameset>
+
+</head>
+<body>
+
+</body>
+
+</html>
+
+

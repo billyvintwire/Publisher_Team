@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인</title>
+    <link rel="stylesheet" href="../../../assets/css/_reset.css">
+    <link rel="stylesheet" href="../../../assets/css/_common.css">
+    <link rel="stylesheet" href="../../../assets/css/_font.css">    
+    <link rel="stylesheet" href="../../../assets/css/top.css">
+    <link rel="stylesheet" href="../../../assets/css/main.css">
+    <script src="../../../assets/js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--// Body Frame -->
+        <div id="body" class="container main">
+            <!--// Body Left -->
+            <div id="body_left" class="main_left">
+                <div class="content-box">
+                    <div class="today-wrap">
+                        <span class="icon-wether"></span>
+                        <span class="date">2023. 04. 20 목요일</span>
+                    </div>
+                    <div class="h1 main-leftuser-name">홍길동 님</div>
+                    
+                    <iframe id="user-wrap" src="./left_contents.html" frameborder="0"></iframe>
+                </div>
+                <div class="btn-close-wrap">
+                    <button class="btn-close" id="js-main_left-toggle"><img src="../../../assets/images/icon/btn_close.svg" /></button>
+                </div>
+                <div class="main_left_banner_wrap">
+                    <iframe id="main-bith"  src="./main_birth.html" frameborder="0"></iframe>
+                </div>
+            </div>
+            <!--// Body Right -->
+            <div id="body_right" class="main_right">
+                <div class="content-box">
+                    <div class="tab-menus">
+                        <ul id="js-tab-menu">
+                            <li><a href="javascript:;" data-tab="#main-tab-contents1">최근게시글</a></li>
+                            <li><a href="javascript:;" data-tab="#main-tab-contents2">공지사항</a></li>
+                            <li><a href="javascript:;" data-tab="#main-tab-contents3">사내소식</a></li>
+                            <li><a href="javascript:;" data-tab="#main-tab-contents4">경조사</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="main-tab-contents1" class="on">
+                        <ul>
+                            <li class="notice">
+                                <a href="javascript:void:(0)">[공지사항] 사내방역수칙 운영중단 안내</a>
+                                <span class="date">2023.04.09</span>
+                            </li>
+                            <li class="notice">
+                                <a href="javascript:void:(0)">[전사교육] 사이버 자금세탁방지제도 교육실시 (03.14 ~ 03.27)</a>
+                                <span class="date">2023.03.06</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[사내소식] DB Alpha+ Club, ‘아트컬렉션’ 개최<span class="new"></span></a>
+                                <span class="date">2023.04.03</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] 전단채 원리금 연장안내 (지급완료)</a>
+                                <span class="date">2023.04.13</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] 국내 야간선물옵션시장 휴장안내</a>
+                                <span class="date">2023.04.12</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] 국민건강보험 신규 보험료 및 정산 안내</a>
+                                <span class="date">2023.04.12</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] WM PB 시장코멘트 (ETF MP)</a>
+                                <span class="date">2023.04.08</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] IT혁신팀 서무등록 요청드립니다<em>[3]</em></a>
+                                <span class="date">2023.04.05</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] 채권 콜옵션행사 통보 안내</a>
+                                <span class="date">2023.04.05</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[사내소식] 2023 Bulls Race 참가</a>
+                                <span class="date">2023.04.03</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="main-tab-contents2">
+                        <ul>
+                            <li class="notice">
+                                <a href="javascript:void:(0)">[공지사항] 사내방역수칙 운영중단 안내</a>
+                                <span class="date">2023.04.09</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] 전단채 원리금 연장안내 (지급완료)</a>
+                                <span class="date">2023.04.13</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] 국내 야간선물옵션시장 휴장안내</a>
+                                <span class="date">2023.04.12</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] 국민건강보험 신규 보험료 및 정산 안내</a>
+                                <span class="date">2023.04.12</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] WM PB 시장코멘트 (ETF MP)</a>
+                                <span class="date">2023.04.08</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] IT혁신팀 서무등록 요청드립니다<em>[3]</em></a>
+                                <span class="date">2023.04.05</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[공지사항] 채권 콜옵션행사 통보 안내</a>
+                                <span class="date">2023.04.05</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="main-tab-contents3">
+                        <ul>
+                            <li>
+                                <a href="javascript:void:(0)">[사내소식] DB Alpha+ Club, ‘아트컬렉션’ 개최<span class="new"></span></a>
+                                <span class="date">2023.04.03</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void:(0)">[사내소식] 2023 Bulls Race 참가</a>
+                                <span class="date">2023.04.03</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="main-tab-contents4">
+                        <ul>
+                            <li>
+                                <a href="javascript:void:(0)">[경조사] 홍길동 결혼 안내</a>
+                                <span class="date">2023.04.03</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-box-wrap">
+                    <div class="content-box db-mindset">
+                        <div class="db-mindset-titwrap">
+                            <div>
+                                DYB 마인드셋 
+                            </div>
+                        </div>
+                        <div class="db-mindset-con">
+                            <div>
+                                <img src="../../../assets/images/DYB_mindset.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-box main-schedule">
+                        <iframe id="main-schedule"  src="./schedule.html" frameborder="0"></iframe>
+                        <div class="schedule__list_btnarea">
+                            <button class=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function(){
+            var getSchedule = document.getElementById('main-schedule').contentWindow.document.getElementById("page-schedule");
+            var schedule_height = getComputedStyle(getSchedule).height;
+            var schedule_height_px = schedule_height.replace('px','');
+            var schedule_height_num = Number(schedule_height_px);
+            var boxheight =  schedule_height_num + 40 ;
+            var boxInHeight = schedule_height_num + 40;
+            var main_schedule = document.getElementById('main-schedule');
+            var main_scheduleClass = document.getElementsByClassName('main-schedule')[0];
+
+            function schedule__btnShow(){
+                let list_wrap = getSchedule.getElementsByClassName('schedule__list_wrap')[0];
+                let list = getSchedule.getElementsByClassName('schedule__list');
+                let count = list.length;
+                let height = (62 * count) + 46;
+                if(count >= 2){
+                    list_wrap.style.height = 170 + 'px'
+                    main_schedule.style.height = 540 + 'px';
+                    main_scheduleClass.style.height =  540 + 'px';
+                    $('.schedule__list_btnarea').css('display' , 'block');
+                }else{
+                    list_wrap.style.height = 108 + 'px'
+                    main_schedule.style.height = 470 + 'px';
+                    main_scheduleClass.style.height = 470 + 'px';
+                }
+            };
+            schedule__btnShow();
+
+            $('.schedule__list_btnarea button').on('click',function(){
+                let list_wrap = getSchedule.getElementsByClassName('schedule__list_wrap')[0];
+                let list = getSchedule.getElementsByClassName('schedule__list');
+                let count = list.length;
+                var height_b = (62 * count) + 46;
+                if ( count == 1){
+                    if($(this).hasClass('on') == true){
+                        $(this).removeClass('on');
+                        list_wrap.style.height = 108 + 'px';
+                        main_schedule.style.height = 470 + 'px';
+                        main_scheduleClass.style.height = 470 + 'px';
+                    }else{
+                        $(this).addClass('on')
+                    }
+                }
+                if( count >= 3 ){
+                    if($(this).hasClass('on') == true){
+                        $(this).removeClass('on');
+                        list_wrap.style.height = 170 + 'px';
+                        main_schedule.style.height = 540 + 'px';
+                        main_scheduleClass.style.height =  540 + 'px';
+
+                    }else{
+                        $(this).addClass('on')
+                        main_schedule.style.height = 362 + height_b +  'px';
+                        main_scheduleClass.style.height = 362 + height_b +  'px';
+                        list_wrap.style.height = height_b + 'px';
+                    };
+                }
+               
+            });
+
+            
+        };
+        
+
+        // selectbox custom
+        function selectCustom(){
+            $(document).on("click", ".select-tit", function(){
+                if($(this).hasClass('on') == true){
+                    $(this).removeClass('on');
+                    $(this).siblings('.select-list').slideUp();
+                } else if($(this).parents().hasClass('disabled') === true) {
+                    $(this).siblings('.select-list').hide();
+                } else{
+                    $(this).addClass('on');
+                    $(this).siblings('.select-list').slideDown();
+                    $('.select-tit').not(this).siblings('.select-list').slideUp();
+                    $('.select-tit').not(this).removeClass('on');
+                }
+            });
+            $(document).on("click", ".select-list a", function(){
+                var value = $(this).html();
+                $(this).parents('.select-list').siblings('.select-tit').html(value);
+                $(this).parents('.select-list').slideUp().siblings('.select-tit').removeClass('on');
+            });
+            $(document).mouseup(function (e){
+                if($(".select-box").has(e.target).length === 0){
+                    $('.select-tit').removeClass('on');
+                    $('.select-list').slideUp();
+                }
+            });
+
+        }selectCustom();
+
+        /** Custom select dropdown */ 
+        function dropdownCustom(){
+            let dropdown = $('[rel="dropdown"]');
+            dropdown.find('a.dropdown-toggle').on('click', function(){
+                if($(this).hasClass('open')) {
+                    $(this).toggleClass('open').next('ul').toggle().toggleClass('open');
+                } else {
+                    dropdown.find('a.dropdown-toggle').removeClass('open');
+                    dropdown.find('a.dropdown-toggle').next('ul.open').hide().removeClass('open');
+                    $(this).toggleClass('open').next('ul').toggle().toggleClass('open');	
+                }		
+            });		
+            $(document).click(function(){
+                dropdown.find('a.dropdown-toggle').removeClass('open');
+                dropdown.find('a.dropdown-toggle').next('ul.open').hide().removeClass('open');
+            });
+            dropdown.click(function(e){
+                e.stopPropagation();
+            });
+        }dropdownCustom();
+
+        // 팝업창
+        $("#popOpen").on('click', function(){
+            $('#popWrap').addClass('on');
+        });
+        $(document).mouseup(function (e){
+            if($(".popup").has(e.target).length === 0){
+                $("#popWrap").removeClass('on');
+            }
+        });
+
+        // 메인 - 좌측메뉴 접힘/열기 
+        $('#js-main_left-toggle').on('click', function() {
+            $(this).toggleClass('close');
+            $('#body_left.main_left>.content-box').toggleClass('close');
+        });
+
+        // 메인페이지 우측 탭메뉴 
+        $('#js-tab-menu a').on('click', function(){ 
+            $('.tab-contents').hide();
+            $('#js-tab-menu a.is-active').removeClass('is-active');
+            $(this).addClass('is-active');        
+            var tab_cont = $(this).data('tab');
+            $(tab_cont).show();        
+            return false;       
+        });
+        $('#js-tab-menu li:first a').click();
+        // Top 스크롤픽스
+        var scrollPos = $(window).scrollTop();
+        if (scrollPos >= 1) {
+            $('#top').addClass('scroll-down');
+        }
+        $(window).scroll(function(){
+            if ($(window).scrollTop() >= 1) {
+                $('#top').addClass('scroll-down');
+            }
+            else {
+                $('#top').removeClass('scroll-down');
+            }
+        });
+        
+    </script>
+  
+
+</body>
+</html>
