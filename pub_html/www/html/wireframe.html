@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 가이드</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- 로컬소스 -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/pub.css" />
+    <link rel="stylesheet" href="../assets/css/button.css" />
+</head>
+<body>
+<header>
+    <div class="container">
+        <button class=" icon-m-btn"> BUTTON 1 </button>
+        <button class=" type01 icon-m-btn"> BUTTON 2 </button>
+        <button class=" type02 icon-m-btn"> BUTTON 3 </button>
+        <button class=" type03 icon-m-btn"> BUTTON 4 </button>
+    </div>
+</header>
+<div class="wrap">
+
+    <section class=""> 
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <h2 class="">기본</h2>
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="btn-wrap">
+                                <div class="left">
+                                    <button type="button">TEXT</button>
+                                    <button type="button" disabled>TEXT</button>
+                                    <button type="button" class="type01">TEXT</button>
+                                    <button type="button" class="type01" disabled>TEXT</button>
+                                </div>    
+                                <div class="right">
+                                    <button type="button" class="type02">TEXT</button>
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="icon-button">TEXT</button>
+                                    <button type="button" class="icon-button" disabled>TEXT</button>
+                                </div>
+                            </div>
+                            <div style="height:20px;"></div>
+                            <div class="btn-wrap">
+                                <div class="left">
+                                    <button type="button" class="size01">TEXT</button>
+                                    <button type="button" disabled class="size01">TEXT</button>
+                                    <button type="button" class="type01 size01">TEXT</button>
+                                    <button type="button" class="type01 size01" disabled>TEXT</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="type02 size02">TEXT</button>
+                                    <button type="button" class="type02 size02" disabled>TEXT</button>
+                                    <button type="button" class="type03 size02">TEXT</button>
+                                    <button type="button" class="type03 size02" disabled>TEXT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <section class=""> 
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <div class="item-wrap">
+                        <h2 class="">호버,클릭 액션</h2>
+                        <div class="item">
+                            <div class="btn-wrap hover-btn-area btn-click-motion">
+                                <div class="left">
+                                    <button type="button" class="hover1">TEXT</button>
+                                    <button type="button" class="hover2" disabled>TEXT</button>
+                                    <button type="button" class="type01 ">TEXT</button>
+                                    <button type="button" class="type01 " disabled>TEXT</button>
+                                </div>    
+                                <div class="right">
+                                    <button type="button" class="type02 hover3">TEXT</button>
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="icon-button hover4">TEXT</button>
+                                    <button type="button" class="icon-button" disabled>TEXT</button>
+                                </div>
+                            </div>
+                            <div style="height:20px;"></div>
+                            <div class="btn-wrap btn-click-motion">
+                                <div class="left">
+                                    <button type="button" class="size01">TEXT</button>
+                                    <button type="button" disabled class="size01">TEXT</button>
+                                    <button type="button" class="type01 size01">TEXT</button>
+                                    <button type="button" class="type01 size01" disabled>TEXT</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="type02 size02">TEXT</button>
+                                    <button type="button" class="type02 size02" disabled>TEXT</button>
+                                    <button type="button" class="type03 size02">TEXT</button>
+                                    <button type="button" class="type03 size02" disabled>TEXT</button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class=""> 
+        <article>
+            <div class="container">
+                <div class="inner">
+                    <h2 class="">반응형 버튼</h2>
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="btn-wrap responsive-btn-wrap">
+                                <div class="left">
+                                    <button class=" icon-m-btn"> BUTTON 1 </button>
+                                    <button class=" type01 icon-m-btn"> BUTTON 2 </button>
+                                    <button class=" type02 icon-m-btn"> BUTTON 3 </button>
+                                    <button class=" type03 icon-m-btn"> BUTTON 4 </button>
+                                </div>
+                                <div class="right"> 
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="type02" disabled>TEXT</button>
+                                    <button type="button" class="icon-button" disabled>TEXT</button>
+                                    <button type="button" class="icon-button" disabled>TEXT</button>
+                                </div>
+                            </div>
+                            <div style="height:20px"></div>
+                            <div class="btn-wrap responsive-btn-wrap">
+                                <div class="left">
+                                    <button class="size-m-01"> BUTTON 1 </button>
+                                    <button class=" type01 size-m-02"> BUTTON 2 </button>
+                                    <button class=" type02 size-m-03" > BUTTON 3 </button>
+                                    <button class=" type03 size-m-04"> BUTTON 4 </button>
+                                </div>
+                            </div>
+                            <div class="btn-bottom-wrap">
+                                <button type="btn-blackline">
+                                    <div class="effect">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+                                            <defs>
+                                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18  58-18 88-18  58 18 88 18 v44h-352z"></path>
+                                            </defs>
+                                            <g class="parallax">
+                                                <use xlink:href="#gentle-wave" x="50" y="0" fill="#8feed9"></use>
+                                                <use xlink:href="#gentle-wave" x="50" y="3" fill="#45dab9"></use>
+                                                <use xlink:href="#gentle-wave" x="50" y="6" fill="#64CCB5"></use>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <span>text text</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</div>
+
+
+
+
+</body>
+</html>

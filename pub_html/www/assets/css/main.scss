@@ -7,6 +7,7 @@
         height: 100vh;
         @include background(login, login_bg, png, no-repeat, cover, top, left);
         .login-cont{
+            @include flex-row(flex,row,center,center);
             width: calc(100% - 4rem);
             max-width: 48rem;
             position: absolute;
